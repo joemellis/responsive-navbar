@@ -4,25 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML CSS static web page</title>
+    <title>Joe Mellis Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
+    <!--Content header-->
 	<header class="header">
-        <a href="#" class="logo">Logo</a>
+        <a href="#" class="logo">Portfo<span>lio</span></a>
         <input type="checkbox" id="check">
+        <!--icons for x and bars-->
         <label for="check" class="icons">
             <i class='bx bx-menu' id="menu-icon"></i>
             <i class='bx bx-x' id="close-icon"></i>
         </label>
+        <!--Content navbar-->
         <nav class="navbar">
           <a href="index.html" style="--i:0;">Home</a>
-          <a href="about.html" style="--i:1;">About</a>
+          <a href="index.html#about" style="--i:1;">About</a>
           <a href="gallery.html" style="--i:2;">Gallery</a>
-          <a href="services.html" style="--i:3;">Services</a>
+          <a href="index.html#service" style="--i:3;">Services</a>
           <a href="contact.html" style="--i:4;">Contact</a>
       </nav>
     </header>
+  <!--Content landing-->
+    <div class="content-container">
+    <div class="content">
+      <h4>Hello, my name is</h4>
+      <h1>Joe <span>Mellis</span></h1>
+      <h3>I am a <span>Full Stack Developer</span></h3>
+      <div class="newsletter">
+        <form action="">
+        <input type="email" name="email" id="mail" placeholder="Enter your E-mail">
+        <input type="submit" name="submit" value="Lets Start">
+      </form>
+      </div>
+    </div>
+    <div class="content-image">
+      <img src="/myimage.jpg" alt="my picture">
+  </div>
+  </div>
+  <!--Content about section start-->
+  <section class="about" >
+    <a name="about"></a>
+    <div class="main">
+      <img src="/img/main.jpg" alt="">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <h5>Developer <span>& Designer.</span></h5>
+        <p>I am a fullstack web developer. i can provide clean code and pixle perfect design, i also make websites more interactive with web animations,programing in HTML CSS Javascript C# Java and python,  a responsive design makes your website accessable to all users, regardless of thier device</p>
+      </div>
+      <button class="button" href="contact.html">Lets Talk</button>
+    </div>
+  </section>
+  <!--Content Service section start-->
+<div class="service">
+  <a name="service"></a>
+  <div class="title">
+    <h2>Services</h2>
+  </div>
+  <div class="box">
+    <div class="card">
+      <i class='bx bx-menu' id="menu-icon"></i>
+      <h5>Web Development</h5>
+      <div class="pra">
+        <p>Every website should be built with 2 primary goals: Firstly, it needs to work across all devices. secondly, it needs to be as fast as possible</p>
+        <p style="text-align: center;">
+          <a class="button" href="#">Read more</a></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <i class='bx bx-user' ></i>
+      <h5>Web Development</h5>
+      <div class="pra">
+        <p>Every website should be built with 2 primary goals: Firstly, it needs to work across all devices. secondly, it needs to be as fast as possible</p>
+        <p style="text-align: center;">
+          <a class="button" href="#">Read more</a></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <i class='bx bx-bell' ></i>
+      <h5>Web Development</h5>
+      <div class="pra">
+        <p>Every website should be built with 2 primary goals: Firstly, it needs to work across all devices. secondly, it needs to be as fast as possible</p>
+        <p style="text-align: center;">
+          <a class="button" href="#">Read more</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Content Contact Me section start-->
+<div class="contact-me">
+  <p>Let Me Create You A Beautiful Website</p>
+  <a class="button-two" href="contact.html">Hire Me</a>
+</div>
+<footer>
+  <p>Joe Mellis</p>
+  <p>click the link below to follow me</p>
+  <div class="social">
+    <a href="#"><i class='bx bxl-meta' ></i></a>
+    <a href="#"><i class='bx bxl-instagram' ></i></a>
+    <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+  </div>
+  <p class="end">CopyRight by Joe Mellis 2024</p>
+</footer>
+<!--Content Footer section start-->
   </body>
 </html>
