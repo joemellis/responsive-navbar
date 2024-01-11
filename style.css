@@ -5,13 +5,14 @@
     font-family:sans-serif;
 }
 
-body{
-   height: 100%;
-   
-    background: url("/background.jpg")no-repeat ;
-    width: 100%;
-    background-size: cover;
-    background-position: center; 
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set the height of the container to the full viewport height */
+    background-image: url('/background.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+    background-size: cover; /* Ensure the background image covers the entire container without stretching */
+    background-position: center; /* Center the background image within the container */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
 .header{
     position: fixed;
@@ -66,7 +67,7 @@ left: 100%;
     padding:10px;
 }
 .navbar a:hover{
-    color:#ea1538;
+    color:#15d1ea;
     transition:0.3s;
 }
 #check{
@@ -168,7 +169,7 @@ section{
     border-radius: 10px;
 }
 span{
-    color: #ea1538;
+    color: #15d1ea;
 }
 .contact-form textarea{
     resize: none;
@@ -176,7 +177,7 @@ span{
 }
 .contact-form form .btn{
     display: inline-block;
-    background: #ea1538;
+    background: #15d1ea;
     font-size: 1.1rem;
     text-transform: uppercase;
     font-weight: 600;
@@ -187,7 +188,7 @@ span{
     cursor: pointer;
 }
 .contact-form form .btn:hover{
-    border: 2px solid #ea1538;
+    border: 2px solid #15d1ea;
     background: transparent;
     transform: scale(1.1);
 
@@ -231,7 +232,7 @@ span{
     display: inline-block;
     width: 100%;
     padding: 14px 130px 14px 15px;
-    border: 2px solid #ea1538;
+    border: 2px solid #15d1ea;
     outline: none;
     border-radius: 30px;
 }
@@ -242,7 +243,7 @@ span{
     border: none;
     padding: 10px 30px;
     border-radius: 30px;
-    background-color: #ea1538;
+    background-color: #15d1ea;
     color: white;
     box-shadow: 0px 0px 5px #000,0px 0px 15px #858585;
     top: 6px;
@@ -263,6 +264,8 @@ span{
 
 }
 .content-image img{
+    max-height: 500px;
+    max-width: 500px;
     width: auto;
     height: auto;
     border-radius: 50%;
@@ -281,6 +284,7 @@ span{
 }
 .about-text{
     width: 550px;
+    padding: 10px;
 }
 .main{
     width: 1130px;
@@ -289,6 +293,7 @@ span{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
 }
 .about-text h2{
     color: white;
@@ -310,7 +315,7 @@ line-height: 18px;
 margin-bottom: 45px;
 }
 button{
-    background-color: #ea1538;
+    background-color: #15d1ea;
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
@@ -321,7 +326,7 @@ button{
 }
 button:hover{
     background-color: transparent;
-    border: 2px solid #ea1538;
+    border: 2px solid #15d1ea;
     cursor: pointer;
 }
 /*servic section*/
@@ -347,33 +352,73 @@ button:hover{
     height: 365px;
     width: 335px;
     padding: 20px 35px;
-    background: #191919;
+    /* background: #191919; */
     border-radius: 20px;
     margin:15px;
     position: relative;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+#one{
+    background:url("img/p1.png");
+    height: 100vh; /* Set the height of the container to the full viewport height */
+    
+    background-size: cover; /* Ensure the background image covers the entire container without stretching */
+    background-position: center; /* Center the background image within the container */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+#two{
+    background:url("img/p2.png");
+    height: 100vh; /* Set the height of the container to the full viewport height */
+    
+    background-size: cover; /* Ensure the background image covers the entire container without stretching */
+    background-position: center; /* Center the background image within the container */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+#three{
+    background:url("img/p3.png");
+    height: 100vh; /* Set the height of the container to the full viewport height */
+    
+    background-size: cover; /* Ensure the background image covers the entire container without stretching */
+    background-position: center; /* Center the background image within the container */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+#four{
+    background:url("img/p7.png");
+    height: 100vh; /* Set the height of the container to the full viewport height */
+    
+    background-size: cover; /* Ensure the background image covers the entire container without stretching */
+    background-position: center; /* Center the background image within the container */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
 .card i{
         font-size: 50px;
         display: block;
         text-align: center;
         margin: 25px 0px;
-        color:#ea1538 ;
+        color:#15d1ea ;
 }
 .card h5{
     color: white;
     font-size:23px;
     margin-bottom: 15px;
 }
+.pra{
+    background-color: #0000008f;
+}
 .pra p{
 color: #fcfc;
 font-size: 16px;
 line-height: 27px;
 margin-bottom: 25px;
+
+
 }
 
 .card .button{
-    background-color: #ea1538;
+    background-color: #15d1ea;
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
@@ -381,16 +426,21 @@ margin-bottom: 25px;
     padding: 9px 22px;
     border-radius: 30px;
     transition: 0.4s;
+    bottom: 5px;
 }
 .card .button:hover{
     background-color: transparent;
-    border: 2px solid #ea1538;
+    border: 2px solid #15d1ea;
     cursor: pointer;
+}
+.destination{
+    color: white;
+    text-align: center;
 }
 /*contact me section content*/
 .contact-me{
     width: 100%;
-    height: 290px;
+    height: 150px;
     background: #191919;
     display: flex;
     align-items: center;
@@ -405,7 +455,7 @@ margin-bottom: 25px;
 
 }
 .contact-me .button-two{
-    background-color: #ea1538;
+    background-color: #15d1ea;
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
@@ -416,14 +466,14 @@ margin-bottom: 25px;
 }
 .contact-me .button-two:hover{
     background-color: transparent;
-    border: 2px solid #ea1538;
+    border: 2px solid #15d1ea;
     cursor: pointer;
 }
 /*Footer*/
 footer{
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 200px;
     background: #101010;
     display: flex;
     flex-direction: column;
@@ -433,7 +483,7 @@ footer{
 footer p:nth-child(1){
     font-size: 30px;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 footer p:nth-child(2){
@@ -452,7 +502,7 @@ footer p:nth-child(2){
     display: flex;
     align-items: center;
     justify-content:center;
-    background: #ea1538;
+    background: #15d1ea;
     border-radius: 50px;
     margin: 22px 10px;
     color: white;
@@ -465,10 +515,9 @@ footer p:nth-child(2){
 }
 .end{
     position: absolute;
-    color: #ea1538;
-    bottom:35px;
-    font-size: 14px;
-    
+    color: #15d1ea;
+    bottom:5px;
+    font-size: 14px;  
 }
 /*Breakpoint*/
 @media (max-width:992px){
@@ -487,6 +536,8 @@ footer p:nth-child(2){
     }
     .contact-form p{
         margin-bottom: 3rem;
+        text-align: center;
+        color: white;
     }
     
 }
